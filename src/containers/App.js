@@ -120,6 +120,23 @@ class App extends Component {
               : null
             }
 
+            {
+              mobilecheck() ?
+              <select>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+                <option>Тест</option>
+              </select>
+              : null
+            }
+
            </div>;
   }
 }
