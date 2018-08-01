@@ -1,0 +1,60 @@
+body
+  font-family: 'Open Sans'
+  font-weight: 400
+  font-size: 14px
+div.wrap
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  flex-direction: column
+div.search-form
+  border: 1px solid #e1e1e1
+  border-radius: 4px
+  color: #9b9b9b
+  font-size: 14px
+  height: 60px
+  width: 340px
+  position: relative
+  span.search-form__placeholder
+    position: absolute
+    top: 50%
+    left: 2%
+    transform: translateY(-50%)
+    background: #fff
+    padding: 5px 10px
+    pointer-events: none
+    transition: 0.2s ease-in-out
+  span.search-form__placeholder-active
+    top: 0%
+  input.search-form__input
+    border: none
+    height: 100%
+    width: 100%
+    background: transparent
+    outline: none
+    box-sizing: border-box
+    padding: 15px 10px
+div.search-form-up
+  border-radius: 0 0 4px 4px
+div.search-form-down
+  border-radius: 4px 4px 0 0
+div.autocomplete
+  border: 1px solid #e1e1e1
+  position: absolute
+  width: 340px
+  div.autocomplete__item
+    padding: 0px 10px
+    cursor: pointer
+    min-height: 50px
+    display: flex
+    align-items: center
+    &:hover
+      background: #ccc
+    span.autocomplete__item-search
+      color: #ffa965
+      text-decoration: underline
+div.autocomplete-down
+  border-radius:  0 0 4px 4px
+div.autocomplete-up
+  border-radius: 4px 4px 0 0
